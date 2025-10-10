@@ -75,6 +75,7 @@
                 --flake .#$host \
                 --show-trace
               }
+              export -f build-vm
 
               echo "use 'deploy <host> to deploy a host'"
               echo "use 'build-vm <host> to build a vm of a host (useful when testing)'"
