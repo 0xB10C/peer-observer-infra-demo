@@ -137,7 +137,8 @@ in
         index.fullAccessNotice = ''
           <div class="alert alert-info" role="alert">
             <h2>peer-observer demo instance</h2>
-            This is a peer-observer demo instance is operated by <a href="https://b10c.me">b10c</a> and sponsored by <a href=https://lclhost.org/>Localhost Research</a>: a Bitcoin-Focused Research Center in the Bay Area.
+            This is a peer-observer demo instance operated by <a href="https://b10c.me">b10c</a> and sponsored by <a href=https://lclhost.org/>Localhost Research</a>: a Bitcoin-Focused Research Center in the Bay Area.
+            <br><br>
             Normally, access to the peer-observer frontend is restricted to avoid leaking the honeypot node IP addresses to attackers.
             For this demo instance, full access is granted to all visitors. Feel free to explore!
             Note that data presented here could be manipulated by someone who found the node IP addresses.
