@@ -32,11 +32,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1770571173,
-        "narHash": "sha256-LWtuw/fnxtWpPR2FULsPd40z3OuW9IwW5FRRfoWrorM=",
+        "lastModified": 1770931886,
+        "narHash": "sha256-f920YEKuYLrFwziPiNNVudV7Rs+AdQ/dmN51i8q+AWs=",
         "owner": "0xb10c",
         "repo": "nix",
-        "rev": "1da079d67e20a2e5ddff5e9b1066a4508d1054d8",
+        "rev": "6069e8d4fe8616e82026e52456c093314ca7faea",
         "type": "github"
       },
       "original": {
@@ -135,15 +135,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1770725185,
-        "narHash": "sha256-rvzTCZg2s2OzzUYtPO7N/lN5VsWvyhaipiTVGq5qaB0=",
+        "lastModified": 1771085923,
+        "narHash": "sha256-7gZMNbv+uaHhH6UF3TfXsEeH5Ia7c5oxfYD30mWjt0s=",
         "owner": "peer-observer",
         "repo": "infra-library",
-        "rev": "43e1942afefa433be5be1c644652c1b37e0bf2cd",
+        "rev": "301b11a935ea90ebcc4cbf2b997d7b352a08d8c2",
         "type": "github"
       },
       "original": {
         "owner": "peer-observer",
+        "ref": "2026-02-parca",
         "repo": "infra-library",
         "type": "github"
       }

@@ -64,6 +64,8 @@ in
         };
       };
 
+      parca = true;
+
       extraConfig = {
 
       };
@@ -103,6 +105,8 @@ in
           logsToKeep = 2;
         };
       };
+
+      parca = true;
 
       extraConfig = { };
       extraModules = [

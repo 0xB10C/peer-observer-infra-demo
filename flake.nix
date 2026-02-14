@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-25.11";
     peer-observer-infra-library = {
-      url = "github:peer-observer/infra-library";
+      url = "github:peer-observer/infra-library?ref=2026-02-parca";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     disko = {
