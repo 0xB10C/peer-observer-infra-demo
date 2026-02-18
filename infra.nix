@@ -44,6 +44,8 @@ in
         pubkey = "hal/kH7xbDdOTrAL+6lqBnowJqronZMh+QzYDnV6nCU=";
       };
 
+      parca = true;
+
       bitcoind = {
         package = customBitcoind {
           system = "x86_64-linux";
@@ -85,6 +87,8 @@ in
         ip = "10.20.0.2";
         pubkey = "len/Vm7OftPLWOqO4mIMJ+JlJIGB3EHqGZ8lBJ5opkU=";
       };
+
+      parca = true;
 
       bitcoind = {
         net = {
