@@ -37,7 +37,7 @@ in
       id = 1;
       setup = false;
       arch = "x86_64-linux";
-      description = ''A Bitcoin Core node named after Hal Finney. Sponsored by <a href=https://lclhost.org/>Localhost Research</a>.'';
+      description = "A Bitcoin Core node named after Hal Finney. Sponsored by <a href=https://lclhost.org/>Localhost Research</a>.";
 
       wireguard = {
         ip = "10.20.0.1";
@@ -81,7 +81,7 @@ in
       id = 2;
       setup = false;
       arch = "x86_64-linux";
-      description = ''A Bitcoin Core node named after Len Sassaman. Sponsored by <a href=https://lclhost.org/>Localhost Research</a>.'';
+      description = "A Bitcoin Core node named after Len Sassaman. Sponsored by <a href=https://lclhost.org/>Localhost Research</a>.";
 
       wireguard = {
         ip = "10.20.0.2";
