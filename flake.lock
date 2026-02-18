@@ -5,7 +5,7 @@
         "darwin": "darwin",
         "home-manager": "home-manager",
         "nixpkgs": [
-          "peer-observer-infra-library",
+          "infra-library",
           "nixpkgs"
         ],
         "systems": "systems"
@@ -27,16 +27,16 @@
     "b10c-nix": {
       "inputs": {
         "nixpkgs": [
-          "peer-observer-infra-library",
+          "infra-library",
           "nixpkgs"
         ]
       },
       "locked": {
-        "lastModified": 1770571173,
-        "narHash": "sha256-LWtuw/fnxtWpPR2FULsPd40z3OuW9IwW5FRRfoWrorM=",
+        "lastModified": 1771060569,
+        "narHash": "sha256-ft09U9IlqpenzWsG8gL4yXQWmugJhiF21emiqpqOrxQ=",
         "owner": "0xb10c",
         "repo": "nix",
-        "rev": "1da079d67e20a2e5ddff5e9b1066a4508d1054d8",
+        "rev": "cdf18d055494dac60b6208d17714923146c374b9",
         "type": "github"
       },
       "original": {
@@ -48,7 +48,7 @@
     "darwin": {
       "inputs": {
         "nixpkgs": [
-          "peer-observer-infra-library",
+          "infra-library",
           "agenix",
           "nixpkgs"
         ]
@@ -91,7 +91,7 @@
     "home-manager": {
       "inputs": {
         "nixpkgs": [
-          "peer-observer-infra-library",
+          "infra-library",
           "agenix",
           "nixpkgs"
         ]
@@ -107,6 +107,28 @@
       "original": {
         "owner": "nix-community",
         "repo": "home-manager",
+        "type": "github"
+      }
+    },
+    "infra-library": {
+      "inputs": {
+        "agenix": "agenix",
+        "b10c-nix": "b10c-nix",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1771426102,
+        "narHash": "sha256-YjxWFMMJXb+IuKIlwPlp06d+lylN0V3Xt0yRIAAXXrI=",
+        "owner": "peer-observer",
+        "repo": "infra-library",
+        "rev": "f5c41e04b513e2e6ccbacdc88319eedc23c54c8f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "peer-observer",
+        "repo": "infra-library",
         "type": "github"
       }
     },
@@ -126,33 +148,11 @@
         "type": "github"
       }
     },
-    "peer-observer-infra-library": {
-      "inputs": {
-        "agenix": "agenix",
-        "b10c-nix": "b10c-nix",
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1770725185,
-        "narHash": "sha256-rvzTCZg2s2OzzUYtPO7N/lN5VsWvyhaipiTVGq5qaB0=",
-        "owner": "peer-observer",
-        "repo": "infra-library",
-        "rev": "43e1942afefa433be5be1c644652c1b37e0bf2cd",
-        "type": "github"
-      },
-      "original": {
-        "owner": "peer-observer",
-        "repo": "infra-library",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
         "disko": "disko",
-        "nixpkgs": "nixpkgs",
-        "peer-observer-infra-library": "peer-observer-infra-library"
+        "infra-library": "infra-library",
+        "nixpkgs": "nixpkgs"
       }
     },
     "systems": {

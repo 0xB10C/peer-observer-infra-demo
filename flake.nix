@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-25.11";
-    peer-observer-infra-library = {
+    infra-library = {
       url = "github:peer-observer/infra-library";
       inputs.nixpkgs.follows = "nixpkgs";
     };
@@ -17,11 +17,11 @@
     {
       self,
       nixpkgs,
-      peer-observer-infra-library,
+      infra-library,
       disko,
     }:
     let
-      infra = import ./infra.nix { inherit nixpkgs peer-observer-infra-library disko; };
+      infra = import ./infra.nix { inherit nixpkgs infra-library disko; };
 
       # Systems we have a devShell for
       supportedSystems = [
@@ -42,7 +42,7 @@
     {
       formatter = forAllSystems ({ system, ... }: nixpkgs.legacyPackages.${system}.nixfmt-tree);
 
-      nixosConfigurations = (peer-observer-infra-library.lib "x86_64-linux").mkConfigurations infra;
+      nixosConfigurations = (infra-library.lib "x86_64-linux").mkConfigurations infra;
 
       # a shell with all needed tools
       # enter with `nix develop`
@@ -53,7 +53,7 @@
             buildInputs = [
               pkgs.nixos-anywhere
               pkgs.nixos-rebuild
-              peer-observer-infra-library.packages.${system}.agenix
+              infra-library.packages.${system}.agenix
             ];
 
             shellHook = ''
