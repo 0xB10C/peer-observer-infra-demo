@@ -1,5 +1,5 @@
 {
-  peer-observer-infra-library,
+  infra-library,
   disko,
   nixpkgs,
   ...
@@ -8,7 +8,7 @@
 let
   mkPkgs = system: import nixpkgs { inherit system; };
   customBitcoind =
-    { system, overrides }: (peer-observer-infra-library.lib system).mkCustomBitcoind overrides;
+    { system, overrides }: (infra-library.lib system).mkCustomBitcoind overrides;
 in
 {
 
