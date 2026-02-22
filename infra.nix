@@ -66,6 +66,8 @@ in
         };
       };
 
+      peer-observer.extractors.logs.enable = true;
+
       extraConfig = {
 
       };
