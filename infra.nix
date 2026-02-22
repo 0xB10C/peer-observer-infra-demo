@@ -7,8 +7,7 @@
 
 let
   mkPkgs = system: import nixpkgs { inherit system; };
-  customBitcoind =
-    { system, overrides }: (infra-library.lib system).mkCustomBitcoind overrides;
+  customBitcoind = { system, overrides }: (infra-library.lib system).mkCustomBitcoind overrides;
 in
 {
 
