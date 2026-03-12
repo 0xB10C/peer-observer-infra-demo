@@ -46,12 +46,12 @@ in
       parca = true;
 
       bitcoind = {
-        package = customBitcoind {
-          system = "x86_64-linux";
-          overrides = {
-            sanitizersAddressUndefined = true;
-          };
-        };
+        # package = customBitcoind {
+          # system = "x86_64-linux";
+          # overrides = {
+           # sanitizersAddressUndefined = true;
+          # };
+        # };
 
         detailedLogging = {
           # we are a bit limited in disk space, so don't keep old debug logs for too long.
