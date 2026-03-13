@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-25.11";
     infra-library = {
-      url = "github:peer-observer/infra-library";
+      url = "github:peer-observer/infra-library?ref=2026-03-log-level-and-line-bytes-REBASED";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     disko = {
