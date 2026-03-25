@@ -59,6 +59,10 @@
         username = "peerobserver-extractor";
         passwordFile = config.age.secrets.extractor-nats-password.path;
       };
+      log.nats = {
+        username = "peerobserver-extractor";
+        passwordFile = config.age.secrets.extractor-nats-password.path;
+      };
     };
   };
 
