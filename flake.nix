@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-25.11";
     infra-library = {
-      url = "github:peer-observer/infra-library?ref=2026-04-peer-observer-dev";
+      url = "github:peer-observer/infra-library?ref=2026-04-pr400-anomaly-detection";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     disko = {
