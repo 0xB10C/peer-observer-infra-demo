@@ -46,16 +46,18 @@ in
       parca = true;
 
       bitcoind = {
-        # package = customBitcoind {
-          # system = "x86_64-linux";
-          # overrides = {
-           # sanitizersAddressUndefined = true;
-          # };
-        # };
+        package = customBitcoind {
+          system = "x86_64-linux";
+          overrides = {
+            # see https://bnoc.xyz/t/logs-of-mempool-in-non-optimal-ordering-after-block-additions-s/125/
+            gitCommit = "b36ab29fc76d72785b9815508275dffcbeef4d05";
+            gitBranch = "nonoptimal-cluster-dump";
+            gitURL = "https://github.com/instagibbs/bitcoin.git";
+          };
+        };
 
         detailedLogging = {
-          # we are a bit limited in disk space, so don't keep old debug logs for too long.
-          logsToKeep = 2;
+          logsToKeep = 5;
         };
 
         net = {
@@ -104,8 +106,7 @@ in
           bitcoin-cli setban 2604:d500:4:1::/64 add 31536000  # LinkingLion
         '';
         detailedLogging = {
-          # we are a bit limited in disk space, so don't keep old debug logs for too long.
-          logsToKeep = 2;
+          logsToKeep = 5;
         };
       };
 
