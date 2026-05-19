@@ -50,7 +50,7 @@ in
           system = "x86_64-linux";
           overrides = {
             # see https://bnoc.xyz/t/logs-of-mempool-in-non-optimal-ordering-after-block-additions-s/125/
-            gitCommit = "b36ab29fc76d72785b9815508275dffcbeef4d05";
+            gitCommit = "a2996f6d3d342d94e3a3e7d57b72c418383ea416";
             gitBranch = "nonoptimal-cluster-dump";
             gitURL = "https://github.com/instagibbs/bitcoin.git";
           };
