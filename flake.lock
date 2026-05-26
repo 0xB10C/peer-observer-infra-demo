@@ -32,15 +32,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1779638275,
-        "narHash": "sha256-7Exfh4dsYSdWsK0xrSUxfFWVNAspirUcwIsYlGNd2Lg=",
+        "lastModified": 1779831366,
+        "narHash": "sha256-hYNYnsDNA/nsnr2KGfpdFHZJAROiTSnTsnboVfGJ2kE=",
         "owner": "0xb10c",
         "repo": "nix",
-        "rev": "0eae6e50a5bd9a11263bbe935a38afe5240f2e36",
+        "rev": "8ca9ef532fa259d0811eb1e5e5d91dec5b6b3089",
         "type": "github"
       },
       "original": {
         "owner": "0xb10c",
+        "ref": "2026-04-peer-observer-pr400-prometheus-anomalydetection",
         "repo": "nix",
         "type": "github"
       }
@@ -119,15 +120,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1779739419,
-        "narHash": "sha256-yUO4mh0RkWr8c7ZUE64a8o6d2ZZhgNyhJJAi8q3Qj2s=",
+        "lastModified": 1779831614,
+        "narHash": "sha256-F3At27UOFPO87fbKVkmTfWShH9ByJF1VhzKEMNctblQ=",
         "owner": "peer-observer",
         "repo": "infra-library",
-        "rev": "281c2142c99131ded91e5dd531575a3158ee9d74",
+        "rev": "ffca9cf31a27137b183b1afef981eb5173b76b66",
         "type": "github"
       },
       "original": {
         "owner": "peer-observer",
+        "ref": "2026-05-pr400",
         "repo": "infra-library",
         "type": "github"
       }
