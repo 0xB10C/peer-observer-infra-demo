@@ -2,9 +2,9 @@
   description = "A NixOS flake for the demo.peer.observer infrastructure definition.";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-25.11";
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-26.05";
     infra-library = {
-      url = "github:peer-observer/infra-library?ref=2026-05-pr400";
+      url = "github:peer-observer/infra-library?ref=2026-06-pr420";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     disko = {
