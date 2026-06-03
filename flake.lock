@@ -120,11 +120,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1779994596,
-        "narHash": "sha256-Tiyl5hQuJtYF2sY9r01ygxW5TSZZIep3MchPdBmOmk4=",
+        "lastModified": 1780472995,
+        "narHash": "sha256-hMxjRoTTEV/q5oF5a3e+UKKx3+TcFiLgiHTMxwU9jQo=",
         "owner": "peer-observer",
         "repo": "infra-library",
-        "rev": "a4bb3be3e0d34eb19cb77fbe274da7fe3ce302ee",
+        "rev": "b65487a8d5f868e6cf54f395107154026e274733",
         "type": "github"
       },
       "original": {
