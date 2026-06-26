@@ -57,7 +57,7 @@ in
         };
 
         detailedLogging = {
-          logsToKeep = 5;
+          logsToKeep = 3;
         };
 
         net = {
@@ -69,9 +69,7 @@ in
 
       peer-observer.extractors.logs.enable = true;
 
-      extraConfig = {
-
-      };
+      extraConfig = {};
       extraModules = [
         disko.nixosModules.disko
         ./hosts/hal/disko.nix
@@ -94,6 +92,15 @@ in
       parca = true;
 
       bitcoind = {
+        package = customBitcoind {
+          system = "x86_64-linux";
+          overrides = {
+            # https://github.com/bitcoin/bitcoin/pull/35550
+	    gitCommit = "abc33ff043f07226d1f1f88a1d1ddce8dccdd930";
+            gitBranch = "2026-06-addrman-branch";
+            gitURL = "https://github.com/brunoerg/bitcoin.git";
+          };
+        };
         net = {
           useTor = true;
           useI2P = true;
@@ -106,11 +113,11 @@ in
           bitcoin-cli setban 2604:d500:4:1::/64 add 31536000  # LinkingLion
         '';
         detailedLogging = {
-          logsToKeep = 5;
+          logsToKeep = 3;
         };
       };
 
-      extraConfig = { };
+      extraConfig = {};
       extraModules = [
         disko.nixosModules.disko
         ./hosts/len/disko.nix
