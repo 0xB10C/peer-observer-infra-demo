@@ -43,7 +43,7 @@ in
         pubkey = "hal/kH7xbDdOTrAL+6lqBnowJqronZMh+QzYDnV6nCU=";
       };
 
-      parca = true;
+      samply-continuous-profiling = true;
 
       bitcoind = {
         package = customBitcoind {
@@ -89,7 +89,7 @@ in
         pubkey = "len/Vm7OftPLWOqO4mIMJ+JlJIGB3EHqGZ8lBJ5opkU=";
       };
 
-      parca = true;
+      samply-continuous-profiling = true;
 
       bitcoind = {
         package = customBitcoind {

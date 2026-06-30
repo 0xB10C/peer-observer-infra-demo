@@ -2,7 +2,7 @@
   description = "A NixOS flake for the demo.peer.observer infrastructure definition.";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-25.11";
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-26.05";
     infra-library = {
       url = "github:peer-observer/infra-library";
       inputs.nixpkgs.follows = "nixpkgs";
