@@ -31,7 +31,7 @@ jobs:
 
       - name: Build VMs of all hosts
         run: |
-          hosts=($(nix flake show --json | jq -r '.nixosConfigurations | keys[]'))
+          hosts=($(nix eval --json .#nixosConfigurations --apply builtins.attrNames | jq -r '.[]'))
 
           for host in "${hosts[@]}"
           do
