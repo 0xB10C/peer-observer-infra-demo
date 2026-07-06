@@ -31,6 +31,10 @@ jobs:
 
       - name: Build VMs of all hosts
         run: |
+          json="$(nix flake show --json)"
+          echo "$json"
+          echo "$json" | jq '.nixosConfigurations'
+          echo "$json" | jq -r '.nixosConfigurations | keys[]'
           hosts=($(nix flake show --json | jq -r '.nixosConfigurations | keys[]'))
 
           for host in "${hosts[@]}"
