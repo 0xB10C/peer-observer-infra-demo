@@ -46,16 +46,6 @@ in
       samply-continuous-profiling = true;
 
       bitcoind = {
-        package = customBitcoind {
-          system = "x86_64-linux";
-          overrides = {
-            # see https://bnoc.xyz/t/logs-of-mempool-in-non-optimal-ordering-after-block-additions-s/125/
-            gitCommit = "a2996f6d3d342d94e3a3e7d57b72c418383ea416";
-            gitBranch = "nonoptimal-cluster-dump";
-            gitURL = "https://github.com/instagibbs/bitcoin.git";
-          };
-        };
-
         detailedLogging = {
           logsToKeep = 3;
         };
@@ -92,15 +82,15 @@ in
       samply-continuous-profiling = true;
 
       bitcoind = {
-        package = customBitcoind {
-          system = "x86_64-linux";
-          overrides = {
-            # https://github.com/bitcoin/bitcoin/pull/35550
-            gitCommit = "abc33ff043f07226d1f1f88a1d1ddce8dccdd930";
-            gitBranch = "2026-06-addrman-branch";
-            gitURL = "https://github.com/brunoerg/bitcoin.git";
-          };
-        };
+        # package = customBitcoind {
+        #   system = "x86_64-linux";
+        #   overrides = {
+        #     # https://github.com/bitcoin/bitcoin/pull/35550
+        #     gitCommit = "abc33ff043f07226d1f1f88a1d1ddce8dccdd930";
+        #     gitBranch = "2026-06-addrman-branch";
+        #     gitURL = "https://github.com/brunoerg/bitcoin.git";
+        #   };
+        # };
         net = {
           useTor = true;
           useI2P = true;
